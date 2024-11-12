@@ -1,0 +1,8 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.2">
+    <persistence-unit name="ProductCatalogPU" transaction-type="JTA">
+        <jta-data-source>jdbc/ProductCatalogDS</jta-data-source>
+        <class>com.example.productcatalog.model.Product</class>
+        <class>com.example.productcatalog.model.OrderItem</class>
+        <class>com.example.productcatalog.model.Order</class>
+    </persistence-unit>
+</persistence>
